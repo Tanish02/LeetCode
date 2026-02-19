@@ -10,3 +10,45 @@
 // Example 3:
 // Input: nums = [3,3], target = 6
 // Output: [0,1]
+
+//=============================================================
+// function twosum() {
+//   let nums = [2, 7, 11, 15]; // 9
+//   let target = 9;
+//   for (let i = 0; i < nums.length; i++) {
+//     for (let j = i + 1; j < nums.length; j++) {
+//       if (nums[i] + nums[j] === target) {
+//         return [i, j]; // return indices
+//         //        return [nums[i], nums[j]]; // return value
+//       }
+//     }
+//   }
+// }
+// console.log(twosum());  [0,1]
+
+// function twosum() {
+//   let nums = [3, 2, 4];
+//   let target = 6;
+//   for (let i = 0; i < nums.length; i++) {
+//     for (let j = i + 1; j < nums.length; j++) {
+//       if (nums[i] + nums[j] === target) {
+//         return [i, j];
+//         return [nums[i], nums[j]];
+//       }
+//     }
+//   }
+// }
+// console.log(twosum()); // [1,2]
+
+function twosum() {
+  let nums = [3, 3];
+  let target = 6;
+  for (let i = 0; i < nums.length; i++) {
+    for (let j = i + 1; j < nums.length; j++) {
+      if (nums[i] + nums[j] === target) {
+        return [i, j];
+      }
+    }
+  }
+}
+console.log(twosum()); // [0,1]
