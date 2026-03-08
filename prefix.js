@@ -35,26 +35,13 @@
 // }
 // console.log(lcp(["car", "carbon", "carpet"]));
 
-// function lcp(strs) {
-//   if (strs.length === 0) return "";
-//   let result = "";
-//   for (let i = 0; i < strs[0].length; i++) {
-//     let char = strs[0][i];
-//     {
-//       for (let j of strs) {
-//         if (i >= j.length || j[i] !== char) {
-//           return result;
-//         }
-//       }
-//     }
-//     result += char;
-//   }
-//   return result;
-// }
-// console.log(lcp(["apple", "ape", "april"]));
-
-function lcp(strs) {}
+// problems
 // ["car","carbon","carpet"] → ?
 // ["apple","ape","april"] → ?
 // ["dog","cat"] → ?
 // ["interspecies","interstellar","interstate"] → ?
+// ["aaa","aa","aaa"]
+
+function lcp() {
+  let strs = ["aaa", "aa", "aaa"];
+}
