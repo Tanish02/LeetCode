@@ -42,6 +42,53 @@
 // ["interspecies","interstellar","interstate"] → ?
 // ["aaa","aa","aaa"]
 
-function lcp() {
-  let strs = ["aaa", "aa", "aaa"];
+// function lcp() {
+//   let strs = ["aaa", "aa", "aaa"];
+//   if (strs.length === 0) return "";
+//   let result = "";
+//   for (let a = 0; a < strs[0].length; a++) {
+//     let char = strs[0][a];
+//     for (let j of strs) {
+//       if (a >= j.length || j[a] !== char) {
+//         return result;
+//       }
+//     }
+//     result += char;
+//   }
+//   return result;
+// }
+// console.log(lcp());
+
+function comp() {
+  let str = ["interspecies", "interstellar", "interstate"];
+  if (str.length === 0) return "";
+  let result = "";
+  for (let i = 0; i < str[0].length; i++) {
+    let char = str[0][i];
+    {
+      for (let j of str) {
+        if (i >= j.length || j[i] !== char) {
+          return result;
+        }
+      }
+    }
+    result += char;
+  }
+  return result;
 }
+console.log(comp());
+
+/*
+function comp () {
+if words array is empty
+return ""
+result = ""
+for each character index i in first word
+    currentChar = firstWord[i]
+    for every word in array
+        if word ended OR word[i] not equal currentChar
+            return result
+    add currentChar to result
+}
+
+*/

@@ -54,3 +54,18 @@ function twosum() {
 console.log(twosum()); // [0,1]
 
 // this is a brute force method
+
+function sum() {
+  let nums = [15, 20, 35, 60, 30];
+  let target = 125;
+  for (let i = 0; i < nums.length; i++) {
+    for (let j = i + 1; j < nums.length; j++) {
+      for (let k = j + 1; k < nums.length; k++) {
+        if (nums[i] + nums[j] + nums[k] === target) {
+          return [i, j, k];
+        }
+      }
+    }
+  }
+}
+console.log(sum());
